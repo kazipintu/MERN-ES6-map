@@ -61,3 +61,30 @@
   console.log(ageStudentNewArray);
 
 }
+
+{
+  const friends = ['ali', 'abul', 'habul', 'kabul', 'mana', 'baha', 'sana', 'sara'];
+  const nameCounter = friends.map(friend => friend.length);
+  console.log(nameCounter);
+
+}
+
+
+{
+  const products = [
+    { name: 'bottle', price: 20, color: 'blue' },
+    { name: 'table', price: 230, color: 'dark' },
+    { name: 'book', price: 120, color: 'blue' },
+    { name: 'shirt', price: 200, color: 'green' },
+  ]
+
+
+  products.map(product => console.log(product))
+  products.map(product => console.log(product.name))
+  products.map(product => console.log(product.color))
+  products.map(product => console.log(product.price))
+
+  const productBlue = products.map(product => product.color == 'blue')
+  console.log(productBlue);
+  
+}
